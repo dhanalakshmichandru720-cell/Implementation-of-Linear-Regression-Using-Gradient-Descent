@@ -89,7 +89,8 @@ RegisterNumber:  25018616
 ```
 
 ## Output:
-<img width="1920" height="1080" alt="Screenshot (148)" src="https://github.com/user-attachments/assets/37847a67-6dd3-417f-8b72-8056f05058e8" />
+<img width="1439" height="684" alt="Screenshot (147)" src="https://github.com/user-attachments/assets/0bc20a8e-f5f1-4305-96af-70b16df55dc3" />
+
 <img width="1920" height="1080" alt="Screenshot (147)" src="https://github.com/user-attachments/assets/2a00736e-df55-4fdc-8b80-7ae8c804be24" />
 
 
