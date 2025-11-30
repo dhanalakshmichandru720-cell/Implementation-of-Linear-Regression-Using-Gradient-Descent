@@ -15,12 +15,6 @@ To write a program to predict the profit of a city using the linear regression m
 4. 
 
 ## Program:
-
-Program to implement the linear regression using gradient descent.
-Developed by: dhanalakshmi
-RegisterNumber: 25018616
-*/
-
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -47,21 +41,24 @@ print(f"Final intercept (c): {c}")
 
 Y_pred = m * X + c
 
-plt.scatter(X, Y, color="red", label="Data Points")
-plt.plot(X, Y_pred, color="blue", label="Best Fit Line")
+plt.scatter(X, Y, color='red', label="Data Points")
+plt.plot(X, Y_pred, color='blue', label="Best Fit Line")
 plt.xlabel("X")
 plt.ylabel("Y")
 plt.legend()
 plt.title("Linear Regression using Gradient Descent")
 plt.show()
 
-*/
-```
+# Developed by: dhanalakshmi.c
+# Register Number: 25018616
+..
+
+
+....
 
 ## Output:
-<img width="912" height="828" alt="Screenshot 2025-11-30 112917" src="https://github.com/user-attachments/assets/d32957ad-bb76-4418-a202-7d00ab109964" />
-/
 
+<img width="912" height="828" alt="Screenshot 2025-11-30 112917" src="https://github.com/user-attachments/assets/39b9b4bc-ee88-4b4a-9217-b47e42a3e350" />
 
 
 
