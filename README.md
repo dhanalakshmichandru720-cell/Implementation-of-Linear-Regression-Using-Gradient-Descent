@@ -15,6 +15,9 @@ To write a program to predict the profit of a city using the linear regression m
 4. 
 
 ## Program:
+## Program:
+
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -51,7 +54,14 @@ plt.show()
 
 # Developed by: dhanalakshmi.c
 # Register Number: 25018616
-..
+```
+
+---
+
+## Output:
+
+![Output](your_image_here.png)
+
 
 
 ....
