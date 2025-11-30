@@ -18,6 +18,11 @@ To write a program to predict the profit of a city using the linear regression m
 ## Program:
 
 ```python
+/*
+Program to implement the linear regression using gradient descent.
+Developed by: 
+RegisterNumber:  
+*/
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -25,27 +30,30 @@ import matplotlib.pyplot as plt
 X = np.array([1, 2, 3, 4, 5])
 Y = np.array([2, 4, 5, 4, 5])
 
-m = 0
-c = 0
-L = 0.01
-epochs = 1000
 
-n = float(len(X))
+m = 0        
+c = 0        
+L = 0.01     
+epochs = 1000  
+
+n = float(len(X))  
+
 
 for i in range(epochs):
-    Y_pred = m * X + c
-    D_m = (-2/n) * sum(X * (Y - Y_pred))
-    D_c = (-2/n) * sum(Y - Y_pred)
-    m = m - L * D_m
-    c = c - L * D_c
+    Y_pred = m * X + c  
+    D_m = (-2/n) * sum(X * (Y - Y_pred))  
+    D_c = (-2/n) * sum(Y - Y_pred)        
+    m = m - L * D_m   
+    c = c - L * D_c  
 
 print(f"Final slope (m): {m}")
 print(f"Final intercept (c): {c}")
 
+
 Y_pred = m * X + c
 
-plt.scatter(X, Y, color='red', label="Data Points")
-plt.plot(X, Y_pred, color='blue', label="Best Fit Line")
+plt.scatter(X, Y, color="red", label="Data Points")
+plt.plot(X, Y_pred, color="blue", label="Best Fit Line")
 plt.xlabel("X")
 plt.ylabel("Y")
 plt.legend()
@@ -66,7 +74,8 @@ plt.show()
 
 ## Output:
 
-<img width="912" height="828" alt="Screenshot 2025-11-30 112917" src="https://github.com/user-attachments/assets/39b9b4bc-ee88-4b4a-9217-b47e42a3e350" />
+<img width="656" height="599" alt="image" src="https://github.com/user-attachments/assets/003305ac-e2db-4be5-85dc-12feaf9bbc13" />
+
 
 
 
