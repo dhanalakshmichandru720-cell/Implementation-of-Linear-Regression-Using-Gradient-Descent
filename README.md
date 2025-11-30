@@ -17,31 +17,40 @@ To write a program to predict the profit of a city using the linear regression m
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Sample dataset (Univariate)
-x = np.array([1, 2, 3, 4, 5])     # Input feature
-y = np.array([2, 4, 5, 4, 5])     # Target values
+# Sample data
+X = np.array([1, 2, 3, 4, 5])
+Y = np.array([2, 4, 5, 4, 5])
 
-# Number of observations
-n = len(x)
 
-# Calculate slope (m) and intercept (c)
-m = (n * np.sum(x * y) - np.sum(x) * np.sum(y)) / (n * np.sum(x ** 2) - (np.sum(x)) ** 2)
-c = (np.sum(y) - m * np.sum(x)) / n
+m = 0        
+c = 0        
+L = 0.01     
+epochs = 1000  
 
-print(f"Slope (m): {m}")
-print(f"Intercept (c): {c}")
+n = float(len(X))  
 
-# Predict y values
-y_pred = m * x + c
 
-# Plot the data points and regression line
-plt.scatter(x, y, color='blue', label='Actual data')
-plt.plot(x, y_pred, color='red', label='Fitted line')
-plt.xlabel('X')
-plt.ylabel('Y')
-plt.title('Univariate Linear Regression using Least Squares')
+for i in range(epochs):
+    Y_pred = m * X + c  
+    D_m = (-2/n) * sum(X * (Y - Y_pred))  
+    D_c = (-2/n) * sum(Y - Y_pred)        
+    m = m - L * D_m   
+    c = c - L * D_c  
+
+print(f"Final slope (m): {m}")
+print(f"Final intercept (c): {c}")
+
+
+Y_pred = m * X + c
+
+plt.scatter(X, Y, color="red", label="Data Points")
+plt.plot(X, Y_pred, color="blue", label="Best Fit Line")
+plt.xlabel("X")
+plt.ylabel("Y")
 plt.legend()
+plt.title("Linear Regression using Gradient Descent")
 plt.show()
+
  -----------------------------
 
 .
@@ -51,7 +60,8 @@ RegisterNumber:  25018616
 ```
 
 ## Output:
-<img width="702" height="591" alt="Screenshot 2025-11-29 102238" src="https://github.com/user-attachments/assets/44457392-d828-47f4-aab3-b2136dc218cd" />
+<img width="671" height="575" alt="image" src="https://github.com/user-attachments/assets/85d96960-9ca4-4d90-8e97-e1774a797737" />
+/>
 
 
 
