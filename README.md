@@ -58,9 +58,7 @@ plt.show()
 
 ---
 
-## Output:
 
-![Output](your_image_here.png)
 
 
 
