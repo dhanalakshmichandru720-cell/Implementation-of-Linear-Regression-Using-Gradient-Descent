@@ -23,6 +23,11 @@ Program to implement the linear regression using gradient descent.
 Developed by: 
 RegisterNumber:  
 */
+/*
+Program to implement the linear regression using gradient descent.
+Developed by: 
+RegisterNumber:  
+*/
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -59,7 +64,6 @@ plt.ylabel("Y")
 plt.legend()
 plt.title("Linear Regression using Gradient Descent")
 plt.show()
-
 # Developed by: dhanalakshmi.c
 # Register Number: 25018616
 ```
